@@ -44,14 +44,18 @@ nav {
 }
 
 #donate {
-  border-radius: 20px;
-  background-color: rgb(201, 77, 5);
-  margin-top: 60%;
+  border-radius: 30px;
+  background-color: $navFontcolour;
+  margin-top: 55%;
   width: 30vw;
+  height: 9vh;
   font-weight: 600;
   margin-left: 40%;
-  color: $navFontcolour;
+  color: rgb(26, 111, 122);
   border: none;
+  &:hover {
+    color: white;
+  }
 }
 
 #brandTitle {
