@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#landingPage {
+  background-image: url("../dog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  width: 100% width;
+  height: 25em;
+}
+
+section .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  padding: 8%;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: #e6e4fc !important;
+  font-size: 1em !important;
+}
+
+.nav-link {
+  color: #e6e4fc !important;
+}
+
+#donate {
+  border-radius: 20px;
+  background-color: #c94d05;
+  margin-top: 60%;
+  width: 30vw;
+  font-weight: 600;
+  margin-left: 40%;
+  color: #e6e4fc !important;
+  border: none;
+}
+
+#brandTitle {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

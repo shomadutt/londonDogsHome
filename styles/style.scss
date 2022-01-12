@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landingPage {
+  background-image: url("../dog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Noto Sans", sans-serif;
+}
+
+section {
+  width: 100% width;
+  height: 25em;
+  .sectionTitle {
+    @include flexCenter();
+  }
+}
+
+$navFontcolour: rgb(230, 228, 252) !important;
+
+nav {
+  padding: 8%;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: $navFontcolour;
+  font-size: 1em !important;
+}
+
+.nav-link {
+  color: $navFontcolour;
+}
+
+#donate {
+  border-radius: 20px;
+  background-color: rgb(201, 77, 5);
+  margin-top: 60%;
+  width: 30vw;
+  font-weight: 600;
+  margin-left: 40%;
+  color: $navFontcolour;
+  border: none;
+}
+
+#brandTitle {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
