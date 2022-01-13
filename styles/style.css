@@ -13,6 +13,7 @@ body {
 section {
   width: 100% width;
   height: 25em;
+  background-color: #f6f8f8;
 }
 
 section .sectionTitle {
@@ -45,19 +46,21 @@ nav {
 }
 
 #donate {
-  border-radius: 30px;
-  background-color: #e6e4fc !important;
-  margin-top: 55%;
-  width: 30vw;
-  height: 9vh;
-  font-weight: 600;
-  margin-left: 40%;
-  color: #1a6f7a;
-  border: none;
+  background-color: transparent;
+  margin-top: 59%;
+  width: 20vw;
+  height: 6vh;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-left: 39%;
+  color: white;
+  border: 1px solid white;
 }
 
 #donate:hover {
-  color: white;
+  background-color: #f8f8f8 !important;
+  color: #035d69;
 }
 
 #brandTitle {
@@ -86,6 +89,35 @@ nav {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+#leadingPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+}
+
+@-webkit-keyframes slideup {
+  from {
+    margin-bottom: 100%;
+    height: 300%;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+@keyframes slideup {
+  from {
+    margin-bottom: 100%;
+    height: 300%;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
