@@ -31,6 +31,14 @@ section .sectionTitle {
   padding-top: 10%;
 }
 
+.sectionHeight {
+  height: 16.5em;
+}
+
+#rescue {
+  margin-bottom: 5em;
+}
+
 .navbar {
   background-color: transparent !important;
 }
@@ -46,13 +54,22 @@ section .sectionTitle {
 
 #donate {
   background-color: transparent;
-  margin-top: 71%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-top: 70%;
   width: 20vw;
   height: 6vh;
   border-radius: 15px;
   font-weight: 500;
   font-size: 0.9em;
-  margin-left: 39%;
   color: white;
   border: 1px solid white;
 }

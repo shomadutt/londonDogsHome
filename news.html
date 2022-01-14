@@ -23,10 +23,12 @@
   </head>
 
   <body>
-    <section id="landingPage">
+    <div class="container-fluid" id="news">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
-          <p id="brandTitle">London Dogs Home</p>
+          <div class="row">
+            <div class="col"><p id="brandTitle">London Dogs Home</p></div>
+          </div>
         </a>
 
         <button
@@ -59,32 +61,20 @@
       </nav>
 
       <button id="donate">Donate</button>
-    </section>
-    <section class="sectionHeight" id="mission">
-      <p class="sectionTitle">Our Mission</p>
-
-      <p>
-        The purpose of this endeavor is to aid unfortunate dogs in the interest
-        of a higher quality of life. We take in rescued, confiscated, neglected,
-        injured, ill, unmanageable, or otherwise unwanted dogs from private
-        owners, zoos, shelters, and other public organisations. These dogs are
-        cared for, and/or rehabilitated to the best of our ability and means
-        until which time they can be found healthy, happy homes.
+      <p class="sectionTitle">News</p>
+      <p id="emailPara">
+        We send monthly enewsletters which gives you a peek behind-the-scenes at
+        the Home, keeps you up-to-date with the re-homing numbers, and of course
+        includes photos of some of the gorgeous dogs that your support helps
+        keep safe. We will also send you event, volunteering and fundraising
+        news when we have it throughout the year.
       </p>
-    </section>
-
-    <section class="sectionHeight" id="rescue">
-      <p class="sectionTitle">The Rescue</p>
-      <p>
-        We are a community-based organisation; we welcome you to spend some time
-        at our facility. We are a family-friendly establishment focused on
-        educating pet owners and animal lovers about the needs and
-        responsibilities of pet ownership as well as behaviour and training
-        issues and health and wellbeing concerns. Neighbourhood children can
-        volunteer to help take care of the dogs, and learn compassion as well as
-        proper feeding, grooming, and handling.
+      <p id="letterPara">
+        Our paper newsletter is sent in April and November each year. It has
+        updates about the work of the Home, animal stories, details about our
+        appeals and raffle tickets if you want to take part.
       </p>
-    </section>
+    </div>
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -31,6 +31,14 @@ section {
   background-color: $sectionBkgdColour;
 }
 
+.sectionHeight {
+  height: 16.5em;
+}
+
+#rescue {
+  margin-bottom: 5em;
+}
+
 .navbar {
   background-color: transparent !important;
 }
@@ -47,7 +55,9 @@ section {
 #donate {
   // border-radius: 30px;
   background-color: transparent;
-  margin-top: 71%;
+  @include flexCenter();
+  margin: auto;
+  margin-top: 70%;
   // width: 30vw;
   // height: 9vh;
   width: 20vw;
@@ -55,7 +65,7 @@ section {
   border-radius: 15px;
   font-weight: 500;
   font-size: 0.9em;
-  margin-left: 39%;
+
   color: white;
   border: 1px solid white;
   &:hover {
