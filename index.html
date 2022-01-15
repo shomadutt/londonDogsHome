@@ -23,47 +23,49 @@
   </head>
 
   <body>
-    <section id="landingPage">
+    <div id="landingPage">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">
-          <p id="brandTitle">London Dogs Home</p>
-        </a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <p id="brandTitle">London Dogs Home</p>
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a href=""><p id="donate">Donate</p></a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="about.html"
-                >About us <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="./about.html"
+                  >About us <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-
-      <button id="donate">Donate</button>
-    </section>
-    <section class="sectionHeight" id="mission">
+    </div>
+    <section>
       <p class="sectionTitle">Our Mission</p>
 
-      <p>
+      <p id="missionPara">
         The purpose of this endeavor is to aid unfortunate dogs in the interest
         of a higher quality of life. We take in rescued, confiscated, neglected,
         injured, ill, unmanageable, or otherwise unwanted dogs from private
@@ -73,9 +75,9 @@
       </p>
     </section>
 
-    <section class="sectionHeight" id="rescue">
+    <section>
       <p class="sectionTitle">The Rescue</p>
-      <p>
+      <p id="rescuePara">
         We are a community-based organisation; we welcome you to spend some time
         at our facility. We are a family-friendly establishment focused on
         educating pet owners and animal lovers about the needs and
@@ -88,6 +90,7 @@
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

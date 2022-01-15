@@ -23,44 +23,46 @@
   </head>
 
   <body>
-    <div class="container-fluid" id="news">
+    <div id="news">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">
-          <div class="row">
-            <div class="col"><p id="brandTitle">London Dogs Home</p></div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <p id="brandTitle">London Dogs Home</p>
+          </a>
+
+          <a href=""><p id="donate">Donate</p></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="./about.html"
+                  >About us <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="about.html"
-                >About us <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
         </div>
       </nav>
-
-      <button id="donate">Donate</button>
+    </div>
+    <section>
       <p class="sectionTitle">News</p>
       <p id="emailPara">
         We send monthly enewsletters which gives you a peek behind-the-scenes at
@@ -69,12 +71,36 @@
         keep safe. We will also send you event, volunteering and fundraising
         news when we have it throughout the year.
       </p>
+
       <p id="letterPara">
         Our paper newsletter is sent in April and November each year. It has
         updates about the work of the Home, animal stories, details about our
         appeals and raffle tickets if you want to take part.
       </p>
-    </div>
+      <p id="rafflePara">
+        FANGTASTIC VIRTUAL HALLOWEEN RAFFLE! Close to 100 prizes donated by
+        local businesses and individuals in the community. This is an online
+        raffle and the drawing will be held on Halloween day at 2pm. Every
+        raffle purchased supports our Home. Thank you so much for your support!
+        Check back occasionally as we'll be adding more prizes.
+      </p>
+      <p id="springPara">
+        SUPER SPRING FUNDRAISER! 100 amazing prizes donated by local businesses
+        and individual members of the community - trips, baskets, original art,
+        gift certificates, games, household items, lots to choose from for the
+        whole family (including our dogs). Proceeds benefit our Home. The raffle
+        is being conducted online. The random drawing takes place on Sunday, May
+        2nd at 6:00pm. The system will randomly automatically draw the winners
+        at 6pm & then send out notifications at 6:05pm. Everyone who
+        participates will be notified about their outcome. Many prizes can be
+        mailed or e-mailed to winners and others will be picked up at the Home.
+        You must be 18 years old and have valid state ID to participate. Please
+        note: a £3 processing fee will be charged to your order at check out.
+        Let's raise some needed funds and have some fun at the same time! Thank
+        you so much for your support. Happy Spring! Prizes AVAILABLE UNTIL:May
+        02, 2022 at 5:45 pm.
+      </p>
+    </section>
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -1,88 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>London Dogs Home</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-  
-    <div class="container-fluid" id="about">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html">
-              <div class="row">
-                <div class="col"><p id="brandTitle">London Dogs Home</p></div>
-              </div>
-            </a>
-    
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.html"
-                    >About us <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    
-          <button id="donate">Donate</button>
-      <p class="sectionTitle">About us</p>
-      <p id="leadingPara">
-        We are one of the leading re-homing centres in the UK. Every year we
-        rescue, rehabilitate and re-home thousands of dogs, but we're still
-        full. Dogs come to us for all sorts of reasons.
-      </p>
-      <p id="whyPara">
-        People can't afford to keep them, their owner died, they've strayed or
-        not been claimed. Some are subjected to cruelty and neglect and some are
-        just not wanted.<br />
-      </p>
-      <p id="supportPara"></p>
-        Every year we give dogs a second chance. To be able to continue, we need
-        your support.
-      </p>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>London Dogs Home</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+</head>
 
-   
+<body>
 
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+
+  <div id="about">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <p id="brandTitle">London Dogs Home</p>
+        </a>
+
+        <a href="">
+          <p id="donate">Donate</p>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="./about.html">About us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section>
+    <p class="sectionTitle">About us</p>
+    <p id="leadingPara">
+      We are one of the leading re-homing centres in the UK. Every year we
+      rescue, rehabilitate and re-home thousands of dogs, but we're still
+      full. Dogs come to us for all sorts of reasons. People can't afford
+      to keep them, their owner died, they've strayed or
+      not been claimed. Some are subjected to cruelty and neglect and some are
+      just not wanted.
+    </p>
+
+    <p id="whyPara">
+      We are proud to be one of very few homes who take in the most difficult
+      and/or critical medical cases. Other homes, the city's Animal Control
+      and our neighbors look to us for help and support.
+      Unfortunately we are always at the brink of our financial boundaries which
+      forces us to consider scaling down our Program. This would
+      restrict us to only taking in the dogs that are already adoptable and
+      leaves us unable to save the ones that truly need us.
+      We have to ask for your assistance to save these truly helpless and homeless
+      dogs. Whether it is illness or injury they suffer from, with your generosity
+      we can help heal them and give them the second chance they deserve.
+    </p>
+    <p id="generousPara">
+      With your generous donations, hundreds of critically injured animals who would
+      otherwise not be given a chance
+      could be saved and given a second chance at life.
+      So many of our animals have benefited from our Critical Care Fund, many of whom
+      would never have been able to
+      regain their quality of life and a chance to find their forever homes. When a
+      critical need is identified for one
+      of our animals, we make an urgent plea for help through our website and email
+      messages to our supporters.
+      Unfortunately, many medical treatments and required follow-up appointments exceed
+      the estimated costs. For this
+      reason, it is always necessary to have reserve funds available whenever possible.
+    </p>
+
+    <p id="supportPara"></p>
+    Once rescued we may discover that an animal has extensive medical needs 
+    that can be addressed by
+    quality medical intervention. Many times, the animal will require surgery for either 
+    a pre-existing medical condition
+    or physical trauma previously sustained i.e. by having been hit by a car.
+    We cannot do this alone. We need your help. Please consider a donation to our Home today.
+    </p>
+  </section>
+
+
+
+
+
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

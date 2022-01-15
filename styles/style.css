@@ -8,14 +8,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Noto Sans", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 65vh;
+}
+
+#donate {
+  color: #e6e4fc !important;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 section {
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
-  height: 25em;
-  background-color: #f6f8f8;
 }
 
 section .sectionTitle {
@@ -28,15 +39,6 @@ section .sectionTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10%;
-}
-
-.sectionHeight {
-  height: 16.5em;
-}
-
-#rescue {
-  margin-bottom: 5em;
 }
 
 .navbar {
@@ -52,33 +54,6 @@ section .sectionTitle {
   color: #e6e4fc !important;
 }
 
-#donate {
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  margin-top: 70%;
-  width: 20vw;
-  height: 6vh;
-  border-radius: 15px;
-  font-weight: 500;
-  font-size: 0.9em;
-  color: white;
-  border: 1px solid white;
-}
-
-#donate:hover {
-  background-color: #f8f8f8 !important;
-  color: #035d69;
-}
-
 #brandTitle {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -88,7 +63,7 @@ section .sectionTitle {
 
 @-webkit-keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 40%;
   }
   to {
     margin-left: 0%;
@@ -97,14 +72,14 @@ section .sectionTitle {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 40%;
   }
   to {
     margin-left: 0%;
   }
 }
 
-#leadingPara {
+#missionPara {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slideup;
@@ -130,7 +105,7 @@ section .sectionTitle {
   }
 }
 
-#whyPara {
+#rescuePara {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slideup;
@@ -141,6 +116,66 @@ section .sectionTitle {
 @keyframes slideup {
   from {
     margin-top: 10%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+#about,
+#news,
+#contact {
+  background: #026269;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
+}
+
+#leadingPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+#whyPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+#generousPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
   }
   to {
     margin-top: 0%;
@@ -195,6 +230,237 @@ section .sectionTitle {
   }
   to {
     margin-top: 0%;
+  }
+}
+
+#rafflePara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+#springPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+.btn {
+  background-color: #026269 !important;
+  color: #e6e4fc !important;
+}
+
+@media screen and (min-width: 280px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+}
+
+@media screen and (min-width: 360px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 393px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 540px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 820px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 653px) and (orientation: landscape) {
+  #landingPage {
+    height: 140vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 720px) and (orientation: landscape) {
+  #landingPage {
+    height: 90vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 844px) and (orientation: landscape) {
+  #landingPage {
+    height: 130vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  #landingPage {
+    height: 110vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 290%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 50%;
+    margin-top: -2%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1326px) and (orientation: landscape) {
+  #landingPage {
+    height: 120vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 390%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 60%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

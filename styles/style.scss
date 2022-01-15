@@ -1,5 +1,4 @@
 $navFontcolour: rgb(230, 228, 252) !important;
-$sectionBkgdColour: rgb(246, 248, 248);
 
 @mixin flexCenter() {
   display: flex;
@@ -17,26 +16,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Noto Sans", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 65vh;
+}
+
+#donate {
+  color: $navFontcolour;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 section {
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
-  height: 25em;
   .sectionTitle {
     @include flexCenter();
-    padding-top: 10%;
   }
-  background-color: $sectionBkgdColour;
-}
-
-.sectionHeight {
-  height: 16.5em;
-}
-
-#rescue {
-  margin-bottom: 5em;
 }
 
 .navbar {
@@ -52,28 +53,6 @@ section {
   color: $navFontcolour;
 }
 
-#donate {
-  // border-radius: 30px;
-  background-color: transparent;
-  @include flexCenter();
-  margin: auto;
-  margin-top: 70%;
-  // width: 30vw;
-  // height: 9vh;
-  width: 20vw;
-  height: 6vh;
-  border-radius: 15px;
-  font-weight: 500;
-  font-size: 0.9em;
-
-  color: white;
-  border: 1px solid white;
-  &:hover {
-    background-color: rgb(248, 248, 248) !important;
-    color: rgb(3, 93, 105);
-  }
-}
-
 #brandTitle {
   animation-duration: 3s;
   animation-name: slidein;
@@ -81,12 +60,55 @@ section {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 40%;
   }
 
   to {
     margin-left: 0%;
   }
+}
+
+#missionPara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+#rescuePara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 10%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+// about page
+
+#about,
+#news,
+#contact {
+  background: rgb(2, 98, 105);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
 }
 
 #leadingPara {
@@ -113,7 +135,23 @@ section {
 
 @keyframes slideup {
   from {
-    margin-top: 10%;
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+#generousPara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
   }
 
   to {
@@ -136,6 +174,8 @@ section {
     margin-top: 0%;
   }
 }
+
+// news page
 
 #emailPara {
   animation-duration: 3s;
@@ -166,5 +206,216 @@ section {
 
   to {
     margin-top: 0%;
+  }
+}
+
+#rafflePara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+#springPara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+.btn {
+  background-color: rgb(2, 98, 105) !important;
+  color: $navFontcolour;
+}
+
+// Media queries
+
+// Portrait
+
+@media screen and (min-width: 280px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 0s;
+    animation-name: slidein;
+  }
+}
+
+@media screen and (min-width: 360px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 0s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 0s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 393px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 0s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 540px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 820px) and (orientation: portrait) {
+  #landingPage {
+    height: 40vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+// Landscape
+
+@media screen and (min-width: 653px) and (orientation: landscape) {
+  #landingPage {
+    height: 140vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 720px) and (orientation: landscape) {
+  #landingPage {
+    height: 90vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 844px) and (orientation: landscape) {
+  #landingPage {
+    height: 130vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  #landingPage {
+    height: 110vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 290%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 50%;
+    margin-top: -2%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1326px) and (orientation: landscape) {
+  #landingPage {
+    height: 120vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 390%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 60%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
