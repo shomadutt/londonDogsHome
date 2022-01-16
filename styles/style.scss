@@ -68,7 +68,39 @@ section {
   }
 }
 
+#missionTitle {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
 #missionPara {
+  animation-duration: 3s;
+  animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+#rescueTitle {
   animation-duration: 3s;
   animation-name: slideup;
   margin-top: 0%;
@@ -92,7 +124,7 @@ section {
 
 @keyframes slideup {
   from {
-    margin-top: 10%;
+    margin-top: 30%;
   }
 
   to {
@@ -111,7 +143,7 @@ section {
   margin-bottom: 5%;
 }
 
-#leadingPara {
+.slide {
   animation-duration: 3s;
   animation-name: slideup;
   margin-top: 0%;
@@ -125,125 +157,6 @@ section {
   to {
     margin-top: 0%;
   }
-}
-
-#whyPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#generousPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#supportPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 10%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-// news page
-
-#emailPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#letterPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#rafflePara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#springPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-.btn {
-  background-color: rgb(2, 98, 105) !important;
-  color: $navFontcolour;
 }
 
 // Media queries
@@ -381,7 +294,7 @@ section {
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   #landingPage {
-    height: 110vh;
+    height: 100vh;
   }
   #brandTitle {
     animation-duration: 3s;
@@ -400,9 +313,50 @@ section {
   }
 }
 
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  #landingPage {
+    height: 80vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 290%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 50%;
+    margin-top: -2%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  #landingPage {
+    height: 90vh;
+  }
+  #brandTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  #donate {
+    margin-left: 390%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 60%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
 @media screen and (min-width: 1326px) and (orientation: landscape) {
   #landingPage {
-    height: 120vh;
+    height: 170vh;
   }
   #brandTitle {
     animation-duration: 3s;

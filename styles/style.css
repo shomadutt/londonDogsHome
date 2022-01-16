@@ -79,7 +79,7 @@ section .sectionTitle {
   }
 }
 
-#missionPara {
+#missionTitle {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slideup;
@@ -105,6 +105,40 @@ section .sectionTitle {
   }
 }
 
+#missionPara {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+#rescueTitle {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  margin-top: 0%;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
 #rescuePara {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
@@ -115,7 +149,7 @@ section .sectionTitle {
 
 @keyframes slideup {
   from {
-    margin-top: 10%;
+    margin-top: 30%;
   }
   to {
     margin-top: 0%;
@@ -131,7 +165,7 @@ section .sectionTitle {
   margin-bottom: 5%;
 }
 
-#leadingPara {
+.slide {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slideup;
@@ -146,130 +180,6 @@ section .sectionTitle {
   to {
     margin-top: 0%;
   }
-}
-
-#whyPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#generousPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#supportPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 10%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#emailPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#letterPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#rafflePara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-#springPara {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slideup;
-          animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-  to {
-    margin-top: 0%;
-  }
-}
-
-.btn {
-  background-color: #026269 !important;
-  color: #e6e4fc !important;
 }
 
 @media screen and (min-width: 280px) and (orientation: portrait) {
@@ -421,7 +331,7 @@ section .sectionTitle {
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   #landingPage {
-    height: 110vh;
+    height: 100vh;
   }
   #brandTitle {
     -webkit-animation-duration: 3s;
@@ -442,9 +352,54 @@ section .sectionTitle {
   }
 }
 
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  #landingPage {
+    height: 80vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 290%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 50%;
+    margin-top: -2%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  #landingPage {
+    height: 90vh;
+  }
+  #brandTitle {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  #donate {
+    margin-left: 390%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 60%;
+  }
+  #contactSection {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
 @media screen and (min-width: 1326px) and (orientation: landscape) {
   #landingPage {
-    height: 120vh;
+    height: 170vh;
   }
   #brandTitle {
     -webkit-animation-duration: 3s;
