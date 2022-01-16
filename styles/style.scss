@@ -6,6 +6,10 @@ $navFontcolour: rgb(230, 228, 252) !important;
   align-items: center;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -65,70 +69,6 @@ section {
 
   to {
     margin-left: 0%;
-  }
-}
-
-#missionTitle {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#missionPara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#rescueTitle {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-#rescuePara {
-  animation-duration: 3s;
-  animation-name: slideup;
-  margin-top: 0%;
-}
-
-@keyframes slideup {
-  from {
-    margin-top: 30%;
-  }
-
-  to {
-    margin-top: 0%;
   }
 }
 
