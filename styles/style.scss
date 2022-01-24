@@ -23,8 +23,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 5%;
-  width: 100%;
-  height: 65vh;
+  height: 40vh;
 }
 
 #donate {
@@ -36,9 +35,7 @@ a:link {
 }
 
 section {
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 100%;
+  padding: 10%;
   .sectionTitle {
     @include flexCenter();
   }
@@ -64,7 +61,7 @@ section {
 
 @keyframes slidein {
   from {
-    margin-left: 40%;
+    margin-left: 10%;
   }
 
   to {
@@ -72,8 +69,22 @@ section {
   }
 }
 
-// about page
+#rescue {
+  height: auto;
+}
 
+#footerSection {
+  padding-top: 40%;
+  height: auto;
+}
+
+#footer {
+  text-align: center;
+}
+
+// Other pages
+
+// navbar on about, news and contact pages
 #about,
 #news,
 #contact {
@@ -104,158 +115,125 @@ section {
 // Portrait
 
 @media screen and (min-width: 280px) and (orientation: portrait) {
-  #landingPage {
-    height: 40vh;
+  #rescue {
+    height: 80vh;
   }
-  #brandTitle {
-    animation-duration: 0s;
-    animation-name: slidein;
+
+  #footer {
+    height: 40vh;
   }
 }
 
 @media screen and (min-width: 360px) and (orientation: portrait) {
-  #landingPage {
+  #rescue {
+    height: 70vh;
+  }
+
+  #footer {
     height: 40vh;
-  }
-  #brandTitle {
-    animation-duration: 0s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 10%;
   }
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait) {
-  #landingPage {
-    height: 40vh;
+  #rescue {
+    height: 80vh;
   }
-  #brandTitle {
-    animation-duration: 0s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 20%;
+
+  #footer {
+    height: 30vh;
   }
 }
 
-@media screen and (min-width: 393px) and (orientation: portrait) {
-  #landingPage {
+@media screen and (min-width: 390px) and (orientation: portrait) {
+  #rescue {
+    height: 60vh;
+  }
+
+  #footer {
     height: 40vh;
   }
-  #brandTitle {
-    animation-duration: 0s;
-    animation-name: slidein;
+}
+
+@media screen and (min-width: 412px) and (orientation: portrait) {
+  #rescue {
+    height: 60vh;
   }
-  #donate {
-    margin-left: 30%;
+
+  #footer {
+    height: 50vh;
   }
 }
 
 @media screen and (min-width: 540px) and (orientation: portrait) {
-  #landingPage {
-    height: 40vh;
+  #rescue {
+    height: 70vh;
   }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 50%;
+
+  #footer {
+    height: 30vh;
   }
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
-  #landingPage {
-    height: 40vh;
+@media screen and (min-width: 540px) and (orientation: portrait) {
+  #rescue {
+    height: 60vh;
   }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 50%;
+
+  #footer {
+    height: 50vh;
   }
 }
 
 @media screen and (min-width: 820px) and (orientation: portrait) {
-  #landingPage {
-    height: 40vh;
+  #rescue {
+    height: 50vh;
   }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 50%;
+
+  #footer {
+    height: 60vh;
   }
 }
 
-// Landscape
+@media screen and (min-width: 912px) and (orientation: portrait) {
+  #rescue {
+    height: 45vh;
+  }
+
+  #footer {
+    height: 60vh;
+  }
+}
+
+// // Landscape
 
 @media screen and (min-width: 653px) and (orientation: landscape) {
   #landingPage {
-    height: 140vh;
+    height: 130vh;
   }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
+  #rescue {
+    height: 45vh;
   }
-  #donate {
-    margin-left: 50%;
+
+  #footer {
+    height: 60vh;
   }
 }
 
 @media screen and (min-width: 720px) and (orientation: landscape) {
-  #landingPage {
-    height: 90vh;
-  }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 50%;
-  }
-}
-
-@media screen and (min-width: 844px) and (orientation: landscape) {
-  #landingPage {
-    height: 130vh;
-  }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 50%;
+  #footer {
+    height: 30vh;
   }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-  #landingPage {
-    height: 100vh;
-  }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 290%;
-  }
-  #navbarTogglerDemo02 {
-    margin-left: 50%;
-    margin-top: -2%;
-  }
-  #contactSection {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
+  @keyframes slidein {
+    from {
+      margin-left: 30%;
+    }
 
-@media screen and (min-width: 1180px) and (orientation: landscape) {
-  #landingPage {
-    height: 80vh;
+    to {
+      margin-left: 0%;
+    }
   }
   #brandTitle {
     animation-duration: 3s;
@@ -267,49 +245,25 @@ section {
   #navbarTogglerDemo02 {
     margin-left: 50%;
     margin-top: -2%;
-  }
-  #contactSection {
-    padding-left: 20%;
-    padding-right: 20%;
   }
 }
 
 @media screen and (min-width: 1280px) and (orientation: landscape) {
-  #landingPage {
-    height: 90vh;
-  }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
   #donate {
-    margin-left: 390%;
+    margin-left: 780%;
   }
   #navbarTogglerDemo02 {
     margin-left: 60%;
-  }
-  #contactSection {
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-top: -2%;
   }
 }
 
-@media screen and (min-width: 1326px) and (orientation: landscape) {
-  #landingPage {
-    height: 170vh;
+@media screen and (min-width: 1368px) and (orientation: landscape) {
+  #rescue {
+    height: 50vh;
   }
-  #brandTitle {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  #donate {
-    margin-left: 390%;
-  }
-  #navbarTogglerDemo02 {
-    margin-left: 60%;
-  }
-  #contactSection {
-    padding-left: 20%;
-    padding-right: 20%;
+
+  #footer {
+    height: 40vh;
   }
 }
