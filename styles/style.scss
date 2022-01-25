@@ -19,11 +19,12 @@ body {
   background-image: url("../dog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   font-family: "Noto Sans", sans-serif;
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 5%;
-  height: 40vh;
+  min-height: 50vh;
 }
 
 #donate {
@@ -70,15 +71,11 @@ section {
 }
 
 #rescue {
-  height: auto;
+  min-height: 200vh;
 }
 
 #footerSection {
-  padding-top: 40%;
-  height: auto;
-}
-
-#footer {
+  min-height: 40vh;
   text-align: center;
 }
 
@@ -114,83 +111,63 @@ section {
 
 // Portrait
 
-@media screen and (min-width: 280px) and (orientation: portrait) {
-  #rescue {
-    height: 80vh;
-  }
-
-  #footer {
-    height: 40vh;
-  }
-}
-
 @media screen and (min-width: 360px) and (orientation: portrait) {
   #rescue {
-    height: 70vh;
+    height: 10vh;
   }
 
   #footer {
-    height: 40vh;
+    min-height: 40vh;
   }
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait) {
   #rescue {
-    height: 80vh;
+    height: 10vh;
   }
 
-  #footer {
-    height: 30vh;
+  #footerSection {
+    min-height: 40vh;
   }
 }
 
 @media screen and (min-width: 390px) and (orientation: portrait) {
   #rescue {
-    height: 60vh;
+    height: 10vh;
   }
 
-  #footer {
-    height: 40vh;
+  #footerSection {
+    min-height: 50vh;
   }
 }
 
 @media screen and (min-width: 412px) and (orientation: portrait) {
   #rescue {
-    height: 60vh;
+    height: 10vh;
   }
 
   #footer {
-    height: 50vh;
+    min-height: 50vh;
   }
 }
 
-@media screen and (min-width: 540px) and (orientation: portrait) {
+@media screen and (min-width: 414px) and (orientation: portrait) {
   #rescue {
-    height: 70vh;
+    height: 10vh;
   }
 
-  #footer {
-    height: 30vh;
-  }
-}
-
-@media screen and (min-width: 540px) and (orientation: portrait) {
-  #rescue {
-    height: 60vh;
-  }
-
-  #footer {
-    height: 50vh;
+  #footerSection {
+    min-height: 60vh;
   }
 }
 
 @media screen and (min-width: 820px) and (orientation: portrait) {
   #rescue {
-    height: 50vh;
+    height: 30vh;
   }
 
   #footer {
-    height: 60vh;
+    min-height: 60vh;
   }
 }
 
@@ -200,7 +177,7 @@ section {
   }
 
   #footer {
-    height: 60vh;
+    min-height: 60vh;
   }
 }
 
@@ -210,22 +187,56 @@ section {
   #landingPage {
     height: 130vh;
   }
+  @keyframes slideup {
+    from {
+      margin-top: 5%;
+    }
+
+    to {
+      margin-top: 0%;
+    }
+  }
   #rescue {
-    height: 45vh;
+    height: 100vh;
   }
 
-  #footer {
-    height: 60vh;
+  #footerSection {
+    min-height: 100vh;
   }
 }
 
-@media screen and (min-width: 720px) and (orientation: landscape) {
-  #footer {
-    height: 30vh;
+@media screen and (min-width: 667px) and (orientation: landscape) {
+  #landingPage {
+    height: 110vh;
+  }
+  #rescue {
+    height: 40vh;
+  }
+
+  #footerSection {
+    min-height: 10vh;
+  }
+  @keyframes slideup {
+    from {
+      margin-top: 10%;
+    }
+
+    to {
+      margin-top: 0%;
+    }
   }
 }
+
+// @media screen and (min-width: 720px) and (orientation: landscape) {
+//   #footer {
+//     height: 30vh;
+//   }
+// }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+  #landingPage {
+    height: 150vh;
+  }
   @keyframes slidein {
     from {
       margin-left: 30%;
@@ -246,15 +257,52 @@ section {
     margin-left: 50%;
     margin-top: -2%;
   }
+  #rescue {
+    height: 40vh;
+  }
+
+  #footerSection {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1180px) and (orientation: landscape) {
+  #landingPage {
+    height: 150vh;
+  }
+  #donate {
+    margin-left: 780%;
+  }
+  #navbarTogglerDemo02 {
+    margin-left: 55%;
+    margin-top: -2%;
+  }
+  #rescue {
+    height: 40vh;
+  }
+
+  #footerSection {
+    min-height: 60vh;
+  }
 }
 
 @media screen and (min-width: 1280px) and (orientation: landscape) {
+  #landingPage {
+    height: 150vh;
+  }
   #donate {
     margin-left: 780%;
   }
   #navbarTogglerDemo02 {
     margin-left: 60%;
     margin-top: -2%;
+  }
+  #rescue {
+    height: 40vh;
+  }
+
+  #footerSection {
+    min-height: 60vh;
   }
 }
 
@@ -263,7 +311,7 @@ section {
     height: 50vh;
   }
 
-  #footer {
-    height: 40vh;
+  #footerSection {
+    min-height: 70vh;
   }
 }
